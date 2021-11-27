@@ -29,7 +29,7 @@ public class SecondPlayer : MonoBehaviour
         {
             transform.position += new Vector3(0, -1, 0) * Time.deltaTime * moveSpeed;
         }
-        else if (Input.GetKey(SecondLeft))
+        /*else if (Input.GetKey(SecondLeft))
         {
             float tiltAroundZ = 1 * tiltAngle;
             Quaternion target = Quaternion.Euler(0, 0, tiltAroundZ);
@@ -40,6 +40,6 @@ public class SecondPlayer : MonoBehaviour
             float tiltAroundZ = 1 * -tiltAngle;
             Quaternion target = Quaternion.Euler(0, 0, tiltAroundZ);
             transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
-        }
+        }*/
     }
 }

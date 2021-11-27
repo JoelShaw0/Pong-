@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TwoPlayer.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/WinScreenP1.unity
+    guid: b79f56ca17f54db4f831b3f363fa9629
+  - enabled: 1
+    path: Assets/Scenes/WinScreenP2.unity
+    guid: f6979ad833810f242b358b4ad8c7def3
   m_configObjects: {}

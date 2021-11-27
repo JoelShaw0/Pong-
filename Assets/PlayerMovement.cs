@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
             Quaternion target = Quaternion.Euler(0, 0, tiltAroundZ);
             transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
         }
-        else if (Input.GetKey(FirstRight))
+        /*else if (Input.GetKey(FirstRight))
         {
             float tiltAroundZ = 1 * -tiltAngle;
             Quaternion target = Quaternion.Euler(0, 0, tiltAroundZ);
@@ -46,6 +46,6 @@ public class PlayerMovement : MonoBehaviour
         {
             //SceneManager.LoadScene("TwoPlayer");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        }*/
     }
 }
