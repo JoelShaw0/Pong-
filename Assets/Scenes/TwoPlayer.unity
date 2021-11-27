@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 225324107}
   m_Layer: 0
   m_Name: BottomRail
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -459,14 +459,14 @@ Rigidbody2D:
   m_GameObject: {fileID: 225324103}
   m_BodyType: 2
   m_Simulated: 1
-  m_UseFullKinematicContacts: 1
+  m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
@@ -633,7 +633,7 @@ GameObject:
   - component: {fileID: 813198367}
   m_Layer: 0
   m_Name: TopRail
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -743,12 +743,12 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1 &993697639
 GameObject:
@@ -861,7 +861,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1211102333}
   - component: {fileID: 1211102332}
-  - component: {fileID: 1211102331}
   - component: {fileID: 1211102330}
   m_Layer: 0
   m_Name: PlayerOneWin
@@ -896,18 +895,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1211102331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211102329}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421f3deec4ba1d14a83f52d03c925411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1211102332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1092,18 +1079,18 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359023849}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &1359023854
 MonoBehaviour:
@@ -1241,7 +1228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380165370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1259,7 +1246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e454c505fb80874097a04442196365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initalSpeed: 400
+  initalSpeed: 25
 --- !u!114 &1380165376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,9 +1281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521806944}
   - component: {fileID: 1521806943}
-  - component: {fileID: 1521806942}
   - component: {fileID: 1521806941}
-  - component: {fileID: 1521806940}
   m_Layer: 0
   m_Name: PlayerTwoWin
   m_TagString: PlayerTwoWin
@@ -1304,18 +1289,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1521806940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521806939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421f3deec4ba1d14a83f52d03c925411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1521806941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1342,18 +1315,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1521806942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521806939}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421f3deec4ba1d14a83f52d03c925411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1521806943
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1683,18 +1644,18 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708097001}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!1 &1839262626
 GameObject:

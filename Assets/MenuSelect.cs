@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuSelect : MonoBehaviour
 {
+    bool GamePaused = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class MenuSelect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void StartButton()
@@ -22,9 +23,14 @@ public class MenuSelect : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void ControlsButton()
+    public void MenuFromWin()
     {
+        SceneManager.LoadScene("GameMenu");
+    }
 
+    public void PlayAgainPTwo()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     public void BackSelect()
